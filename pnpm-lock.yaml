@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -15,8 +15,8 @@ dependencies:
     specifier: 18.0.11
     version: 18.0.11
   '@vercel/blob':
-    specifier: ^0.8.3
-    version: 0.8.3
+    specifier: ^0.16.1
+    version: 0.16.1
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.22)
@@ -103,6 +103,11 @@ packages:
   /@eslint/js@8.38.0:
     resolution: {integrity: sha512-IoD2MfUnOV58ghIHCiil01PcohxjbYR/qCxsoC+xNgUwh1EY8jOOrYmu3d3a71+tJJ23uscEV4X2HJWMsPJu4g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@fastify/busboy@2.1.0:
+    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
+    engines: {node: '>=14'}
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:
@@ -389,11 +394,11 @@ packages:
       eslint-visitor-keys: 3.4.0
     dev: false
 
-  /@vercel/blob@0.8.3:
-    resolution: {integrity: sha512-lbnlO0USopJQS5in1F08S57ttk/DSCeE3JOE39WFXh9BBlwcDdhanfkz6sUi1JhkNe1fzwaQ1zYwd0v03mnpqg==}
+  /@vercel/blob@0.16.1:
+    resolution: {integrity: sha512-GKslL5l/Jx8OBHRunBYsiWmbMxjvy7LRtOcN7czw7vV4c1Z4vGy8NYTd6RdJt08OKC2wHC28LDssdfVNLrzp+w==}
     engines: {node: '>=16.14'}
     dependencies:
-      undici: 5.22.0
+      undici: 5.28.2
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.8.2):
@@ -2758,11 +2763,11 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: false
 
-  /undici@5.22.0:
-    resolution: {integrity: sha512-fR9RXCc+6Dxav4P9VV/sp5w3eFiSdOjJYsbtWfd4s5L5C4ogyuVpdKIVHeW0vV1MloM65/f7W45nR9ZxwVdyiA==}
+  /undici@5.28.2:
+    resolution: {integrity: sha512-wh1pHJHnUeQV5Xa8/kyQhO7WFa8M34l026L5P/+2TYiakvGy5Rdc8jWZVyG7ieht/0WgJLEd3kcU5gKx+6GC8w==}
     engines: {node: '>=14.0'}
     dependencies:
-      busboy: 1.6.0
+      '@fastify/busboy': 2.1.0
     dev: false
 
   /untildify@4.0.0:
