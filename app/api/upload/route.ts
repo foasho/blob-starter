@@ -11,22 +11,24 @@ export async function POST(request: Request): Promise<NextResponse> {
       onBeforeGenerateToken: async () => {
         return {
           allowedContentTypes: [
-            // Images
-            'image/jpeg', 
-            'image/png', 
-            'image/gif',
-            // Videos
-            'video/mp4',
-            // Audios
-            'audio/mpeg',
-            // GLTF
-            'model/gltf+json',
-            // ZIP
-            'application/zip',
-            // JSON
-            'application/json',
-            // text
-            'text/plain',
+            // // Images
+            // 'image/jpeg', 
+            // 'image/png', 
+            // 'image/gif',
+            // // Videos
+            // 'video/mp4',
+            // // Audios
+            // 'audio/mpeg',
+            // // GLTF
+            // 'model/gltf+json',
+            // // ZIP
+            // 'application/zip',
+            // // JSON
+            // 'application/json',
+            // // text
+            // 'text/plain',
+            // すべてを許可
+            '*/*',
           ],
         };
       },
