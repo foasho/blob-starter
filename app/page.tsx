@@ -9,7 +9,7 @@ export default function AvatarUploadPage() {
   const [blob, setBlob] = useState<PutBlobResult | null>(null);
   return (
     <>
-      <h1>Upload Your Avatar</h1>
+      <h1>Upload Your More Than 4.5MB File</h1>
  
       <form
         onSubmit={async (event) => {
